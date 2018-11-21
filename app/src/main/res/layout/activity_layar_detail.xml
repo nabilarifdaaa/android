@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5dd5d5"
+    android:id="@+id/layardetail"
+    tools:context=".LayarDetail">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="25sp"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        android:textColor="@color/putih"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--<TextView-->
+                <!--android:id="@+id/tvIdPembelian2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Id Pembelian : "-->
+                <!--android:textColor="@color/putih"-->
+                <!--style="@style/txt"/>-->
+            <EditText
+                android:id="@+id/edtIdPembelian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:inputType="text"
+                style="@style/editext_crud"
+                android:hint="Id Pembelian"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--<TextView-->
+                <!--android:id="@+id/tvIdPembeli2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Id Pembeli : "-->
+                <!--style="@style/txt"/>-->
+            <EditText
+                android:id="@+id/edtIdPembeli"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:inputType="text"
+                style="@style/editext_crud"
+                android:hint="Id Pembeli"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--<TextView-->
+                <!--android:id="@+id/tvTanggalBeli2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Tanggal Beli : "-->
+                <!--style="@style/txt"/>-->
+            <EditText
+                android:id="@+id/edtTanggalBeli"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                style="@style/editext_crud"
+                android:hint="Tanggal Beli"
+                android:inputType="date"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--<TextView-->
+                <!--android:id="@+id/tvTotalHarga2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Total Harga : "-->
+                <!--style="@style/txt"/>-->
+            <EditText
+                android:id="@+id/edtTotalHarga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                style="@style/editext_crud"
+                android:textColor="@color/putih"
+                android:hint="Total Harga"
+                android:inputType="text"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--<TextView-->
+                <!--android:id="@+id/tvIdTiket2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Id Tiket : "-->
+                <!--style="@style/txt"/>-->
+            <EditText
+                android:id="@+id/edtIdTiket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:hint="Id Tiket"
+                style="@style/editext_crud"
+                android:inputType="text"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/Linearlayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/tvIdTiket2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+            <Button
+                android:id="@+id/btInsert2"
+                android:text="insert"
+                style="@style/button_crud_style"/>
+            <Button
+                android:id="@+id/btUpdate2"
+                style="@style/button_crud_style"
+                android:text="update" />
+            <Button
+                android:id="@+id/btDelete2"
+                style="@style/button_crud_style"
+                android:text="delete" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btBack"
+            android:text="BACK"
+            style="@style/button_back_style"/>
+        <TextView
+            android:id="@+id/tvMessage2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pesan Muncul disini"
+            android:layout_below="@+id/Linearlayout2"
+            android:inputType="textMultiLine"
+            style="@style/txt"/>
+    </LinearLayout>
+</RelativeLayout>
