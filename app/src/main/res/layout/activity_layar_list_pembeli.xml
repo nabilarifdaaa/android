@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_get_pembelian"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="#5dd5d5"
+    tools:context=".LayarListPembeli">
+
+    <Button
+        android:id="@+id/btGet"
+        style="@style/button_crud_style"
+        android:layout_alignTop="@+id/btInsert"
+        android:layout_centerHorizontal="true"
+        android:text="Get" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btGet"
+        >
+    </android.support.v7.widget.RecyclerView>
+    <Button
+    android:id="@+id/btAddData"
+    style="@style/button_crud_style"
+    android:text="insert"/>
+</RelativeLayout>

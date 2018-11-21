@@ -3,7 +3,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiClient {
-    public static final String BASE_URL = "http://192.168.1.2/android-api/index.php/";
+    public static final String BASE_URL = "http://192.168.1.4/android-api/index.php/";
 
     private static Retrofit retrofit = null;
 
